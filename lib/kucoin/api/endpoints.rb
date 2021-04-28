@@ -1,6 +1,5 @@
 # frozen_string_literal: true
-
-Dir[File.expand_path('endpoints/*.rb', File.dirname(__FILE__))].each {|file| require file }
+Dir[File.expand_path('endpoints/*.rb', File.dirname(__FILE__))].sort.each {|file| require file }
 Dir[File.expand_path('endpoints/*/*.rb', File.dirname(__FILE__))].each {|file| require file }
 
 module Kucoin
