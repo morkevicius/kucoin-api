@@ -34,6 +34,11 @@ module Kucoin
           # member
           show:               '/api/v1/orders/:order_id',
         },
+        stop_orders: {
+          index:              '/api/v1/stop-order',
+          # member
+          show:               '/api/v1/stop-order/:order_id',
+        },
         fills: {
           index:              '/api/v1/fills',
           recent:             '/api/v1/limit/fills',
